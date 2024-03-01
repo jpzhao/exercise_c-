@@ -11,10 +11,7 @@ void Worker::Set(){
     cout<<"Enter worker's ID: ";
     cin>>id;
     while (cin.get()!='\n')
-    {
         continue;
-    }
-    
 }
 
 void Worker::Show()const{
@@ -43,14 +40,16 @@ void Singer::Set(){
     cout<<"Enter number for singer's vocal range:\n";
     int i;
     for(i=0;i<Vtypes;i++){
-        cout<<i<<": "<<pv[i]<<" ";
-        if(i%4!=0)
+        cout<<i<<": "<<pv[i]<<"  ";
+        if(i%4==3)
             cout<<endl;
-        while(cin>>voice && (voice<0||voice>=Vtypes))
-            cout<<"Please enter a value >=0 and <"<<Vtypes<<endl;
-        while(cin.get()!='\n')
-            continue;
     }
+    if(i%4!=0)
+        cout<<endl;
+    while(cin>>voice && (voice<0||voice>=Vtypes))
+        cout<<"Please enter a value >=0 and <"<<Vtypes<<endl;
+    while(cin.get()!='\n')
+        continue;
 }
 
 void Singer::Show()const{
