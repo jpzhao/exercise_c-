@@ -1,4 +1,4 @@
-#include "./workermi.h"
+#include "workermi.h"
 #include <iostream>
 using std::cout;
 using std::cin;

@@ -1,3 +1,0 @@
-/home/zjp/exercise_c-/build/CMakeFiles/Demo.dir
-/home/zjp/exercise_c-/build/CMakeFiles/edit_cache.dir
-/home/zjp/exercise_c-/build/CMakeFiles/rebuild_cache.dir
